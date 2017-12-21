@@ -24,7 +24,7 @@ isInclude(5, arr1);//true
 arr1.includes(5);//true
 
 
-/*判断数组中是否有值为NaN*/
+/*判断数组中是否有值为NaN */
 
 let arr1 = [1, 2, 3, 4, 5, 6, NaN];
 /*es5*/
