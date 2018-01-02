@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta name="viewport"
           content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
-    <title>善诊-父母健康找善诊</title>
+    <title>{{title}}</title>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
     <meta name="format-detection" content="telephone=no,email=no"/>
@@ -12,11 +12,12 @@
 <body ontouchstart="">
 <div class="yo-flex" id="app" v-cloak>
     <header class="yo-header sz-header" v-once>
-        <h2 class="title"><%=title%>1</h2>
+        <h2 class="title">{{title}}</h2>
         <a href="javascript:history.back();" class="regret yo-ico" id="sGoBack"></a>
     </header>
     <div class="flex">
-        Welcome to <%=title%>
+        Welcome to {{title}}
+        <!--vue-ssr-outlet-->
     </div>
 </div>
 </body>

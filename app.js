@@ -42,7 +42,7 @@ app.use(session({
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(cookieParser());
-app.use('/sz/static', express.static(path.join(__dirname, 'public'), options));
+app.use('/static', express.static(path.join(__dirname, 'public'), options));
 
 
 app.use(function (req,res,next) {
